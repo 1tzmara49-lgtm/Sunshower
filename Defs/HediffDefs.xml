@@ -1,0 +1,42 @@
+
+<Defs>
+    <HediffDef>
+        <defName>Sunshower_Sinking</defName>
+        <label>Sinking mind</label>
+        <description>Gloom...</description>
+        <initialSeverity>0.1</initialSeverity>
+        <maxSeverity>1.0</maxSeverity>
+        <isBad>true</isBad>
+        <hediffClass>hediffWithComps</hediffClass>
+        <defaultLabelColor>(45, 124, 229)</defaultLabelColor>
+        <alwaysShowSeverity>true</alwaysShowSeverity>
+        <stages>
+            <li>
+                <label>Minor</label>
+                <minSeverity>0.0</minSeverity>
+            </li>
+            <li>
+                <label>Mild</label>
+                <minSeverity>0.2</minSeverity>
+            </li>
+            <li>
+                <label>Serious</label>
+                <minSeverity>0.4</minSeverity>
+            </li>
+            <li>
+                <label>Extreme</label>
+                <minSeverity>0.6</minSeverity>
+            </li>
+            <li>
+                <label>Panic</label>
+                <minSeverity>0.8</minSeverity>
+            </li>
+        </stages>
+        <comps>
+            <li Class="HediffCompProperties_SeverityPerDay">
+                <severityPerDay>-0.2</severityPerDay>
+                <showHoursToRecover>false</showHoursToRecover>
+            </li>
+        </comps>
+    </HediffDef>
+</Defs>

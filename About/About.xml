@@ -1,0 +1,29 @@
+<ModMetaData>
+        <packageId>1tzMara.Sunshower</packageId>
+        <name>Sunshower</name>
+        <author>1tzMara</author>
+        <description>POTENTIAL MAN HIMSELF</description>
+        <supportedVersions>
+            <li>1.6</li>
+            <li>1.7</li>
+        </supportedVersions>
+        <modDependencies>
+        <li>
+            <packageId>ludeon.rimworld</packageId>
+            <displayName>Core</displayName>
+        </li>
+        <li>
+            <packageId>brrainz.harmony</packageId>
+            <displayName>Harmony</displayName>
+        </li>
+        </modDependencies>
+        <loadAfter>
+            <li>ludeon.rimworld</li>
+            <li>ludeon.rimworld.royalty</li>
+            <li>ludeon.rimworld.biotech</li>
+            <li>ludeon.rimworld.anomaly</li>
+            <li>ludeon.rimworld.odyssey</li>
+            <li>ludeon.rimworld.ideology</li>
+            <li>brrainz.harmony</li>
+        </loadAfter>
+    </ModMetaData>

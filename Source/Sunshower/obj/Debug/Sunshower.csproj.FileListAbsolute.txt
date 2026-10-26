@@ -1,0 +1,6 @@
+C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\Sunshower\Assemblies\Sunshower.dll
+C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\Sunshower\Assemblies\Sunshower.pdb
+C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\Sunshower\Source\Sunshower\obj\Debug\Sunshower.csproj.AssemblyReference.cache
+C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\Sunshower\Source\Sunshower\obj\Debug\Sunshower.csproj.CoreCompileInputs.cache
+C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\Sunshower\Source\Sunshower\obj\Debug\Sunshower.dll
+C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\Sunshower\Source\Sunshower\obj\Debug\Sunshower.pdb
