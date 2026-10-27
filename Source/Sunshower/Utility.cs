@@ -34,8 +34,6 @@ namespace Sunshower
 
         public static float getDamageIncrease(float moodThreshold, float currentMood)
         {
-            Log.Message("Threshold: "+moodThreshold);
-            Log.Message("Mood: " + currentMood);
             if (currentMood == 0)
             {
                 return 2.0f;
@@ -87,8 +85,7 @@ namespace Sunshower
                 }
                 else
                 {
-                    DamageInfo dinfo = new DamageInfo();
-                    dinfo.SetAmount(hediff.Severity / 2);
+                    DamageInfo dinfo = new DamageInfo(DamageDefOf.Blunt, armorPenetration:100f, amount:hediff.Severity/2);
                     pawn.TakeDamage(dinfo);
                 }
 

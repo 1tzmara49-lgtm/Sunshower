@@ -14,7 +14,8 @@ namespace Sunshower
         public static ThingDef Sunshower_umbrella;
         public static ThingDef Sunshower_Raincoat;
         public static HediffDef Sunshower_Sinking;
-
+        public static HediffDef Sunshower_BreakProtection;
+        public static HediffDef Sunshower_BreakProtectionCooldown;
         static SunshowerDefOf()
         {
             DefOfHelper.EnsureInitializedInCtor(typeof(SunshowerDefOf));
