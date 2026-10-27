@@ -1,0 +1,59 @@
+<Defs>
+  <ThingDef ParentName="ApparelBase">
+    <defName>Sunshower_Raincoat</defName>
+    <label>sunshower raincoat</label>
+    <description>A large garment that conceals the wearer's entire head and body.</description>
+    <techLevel>Neolithic</techLevel>
+    <graphicData>
+      <texPath>Raincoat/Sunshower_Raincoat</texPath>
+      <graphicClass>Graphic_Multi</graphicClass>
+    </graphicData>
+    <thingCategories>
+      <li>ApparelMisc</li>
+    </thingCategories>
+    <statBases>
+      <MaxHitPoints>100</MaxHitPoints>
+      <WorkToMake>4000</WorkToMake>
+      <Mass>1</Mass>
+      <StuffEffectMultiplierArmor>0.2</StuffEffectMultiplierArmor>
+      <StuffEffectMultiplierInsulation_Cold>0.1</StuffEffectMultiplierInsulation_Cold>
+      <StuffEffectMultiplierInsulation_Heat>0.2</StuffEffectMultiplierInsulation_Heat>
+      <EquipDelay>1.5</EquipDelay>
+    </statBases>
+    <equippedStatOffsets>
+      <MoveSpeed>-0.4</MoveSpeed>
+    </equippedStatOffsets>
+    <smeltable>false</smeltable>
+    <apparel>
+      <bodyPartGroups>
+        <li>UpperHead</li>
+        <li>Neck</li>
+        <li>Shoulders</li>
+        <li>Torso</li>
+        <li>Legs</li>
+        <li>Arms</li>
+      </bodyPartGroups>
+      <wornGraphicPath>Things/Pawn/Humanlike/Apparel/Burka/Burka</wornGraphicPath>
+      <blocksAddedPartWoundGraphics>true</blocksAddedPartWoundGraphics>
+      <parentTagDef>ApparelBody</parentTagDef>
+      <drawData>
+        <defaultData>
+          <layer>83</layer>
+        </defaultData>
+      </drawData>
+      <layers>
+        <li>Shell</li>
+      </layers>
+      <defaultOutfitTags>
+        <li>Worker</li>
+      </defaultOutfitTags>
+      <canBeGeneratedToSatisfyWarmth>false</canBeGeneratedToSatisfyWarmth>
+      <canBeGeneratedToSatisfyToxicEnvironmentResistance>false</canBeGeneratedToSatisfyToxicEnvironmentResistance>
+    </apparel>
+    <comps>
+      <li Class="CompProperties_CauseHediff_Apparel">
+        <hediff>Sunshower_BreakProtection</hediff>
+      </li>
+    </comps>
+  </ThingDef>
+</Defs>

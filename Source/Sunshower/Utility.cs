@@ -11,7 +11,7 @@ namespace Sunshower
 {
     public class Utility
     {
-        public static void addOrIncreaseSeverity(Pawn pawn, HediffDef hediffDef)
+        public static void addOrIncreaseSeverity(Pawn pawn, HediffDef hediffDef, float increase)
         {
             var hediffset = pawn?.health.hediffSet;
 
@@ -23,7 +23,7 @@ namespace Sunshower
             if (hediffset.HasHediff(hediffDef))
             {
                 Hediff hediff = hediffset.GetFirstHediffOfDef(hediffDef);
-                hediff.Severity += 0.1f;
+                hediff.Severity += increase;
 
             }
             else
@@ -56,9 +56,10 @@ namespace Sunshower
 
         }
 
+
         public static void applyMoraleDamage(Pawn pawn)
         {
-            var hediffset = pawn?.health.hediffSet;
+            var hediffset = pawn?.health?.hediffSet;
 
             if (hediffset == null)
             {
@@ -71,11 +72,29 @@ namespace Sunshower
             {
                 Hediff hediff = hediffset.GetFirstHediffOfDef(def);
 
+                if (hediff == null)
+                {
+                    return;
+                }
+
                 float consumedSeverity = 0.2f;
 
-                pawn.needs.mood.CurLevel -= hediff.Severity / 2;
+                var mood = pawn.needs?.mood;
+
+                if (mood != null)
+                {
+                    mood.CurLevel -= hediff.Severity / 2;
+                }
+                else
+                {
+                    DamageInfo dinfo = new DamageInfo();
+                    dinfo.SetAmount(hediff.Severity / 2);
+                    pawn.TakeDamage(dinfo);
+                }
+
                 hediff.Severity -= consumedSeverity;
             }
         }
+
     }
 }

@@ -1,0 +1,41 @@
+<Defs>
+  <ThoughtDef>
+    <defName>Sunshower_Gloom</defName>
+    <workerClass>ThoughtWorker_Hediff</workerClass>
+    <hediff>Sunshower_Sinking</hediff>
+    <validWhileDespawned>true</validWhileDespawned>
+    <developmentalStageFilter>Baby, Child, Adult</developmentalStageFilter>
+    <stages>
+      <li>
+        <label>Sinking mind</label>
+        <description>im so gloomy</description>
+        <baseMoodEffect>-5</baseMoodEffect>
+      </li>
+      <li>
+        <label>Sinking mind</label>
+        <description>im so gloomy</description>
+        <baseMoodEffect>-10</baseMoodEffect>
+      </li>
+      <li>
+        <label>Sinking mind</label>
+        <description>im so gloomy</description>
+        <baseMoodEffect>-15</baseMoodEffect>
+      </li>
+      <li>
+        <label>Sinking mind</label>
+        <description>im so gloomy</description>
+        <baseMoodEffect>-20</baseMoodEffect>
+      </li>
+      <li>
+        <label>Sinking mind</label>
+        <description>im so gloomy</description>
+        <baseMoodEffect>-25</baseMoodEffect>
+      </li>
+      <li>
+        <label>Sinking mind</label>
+        <description>im so gloomy</description>
+        <baseMoodEffect>-30</baseMoodEffect>
+      </li>
+    </stages>
+  </ThoughtDef>
+</Defs>

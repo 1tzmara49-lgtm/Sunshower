@@ -39,4 +39,33 @@
             </li>
         </comps>
     </HediffDef>
+
+    <HediffDef>
+        <defName>Sunshower_BreakProtection</defName>
+        <label>Mental break protection</label>
+        <description>Intercepts one mental break (unless its forced) and goes on cooldown.</description>
+        <initialSeverity>1.0</initialSeverity>
+        <maxSeverity>1.0</maxSeverity>
+        <isBad>false</isBad>
+        <hediffClass>hediffWithComps</hediffClass>
+        <defaultLabelColor>(120, 116, 116)</defaultLabelColor>
+        <alwaysShowSeverity>false</alwaysShowSeverity>
+    </HediffDef>
+
+    <HediffDef>
+        <defName>Sunshower_BreakProtectionCooldown</defName>
+        <label>Mental break protection (Cooldown)</label>
+        <initialSeverity>1.0</initialSeverity>
+        <maxSeverity>1.0</maxSeverity>
+        <isBad>false</isBad>
+        <hediffClass>hediffWithComps</hediffClass>
+        <defaultLabelColor>(120, 116, 116)</defaultLabelColor>
+        <alwaysShowSeverity>false</alwaysShowSeverity>
+        <comps>
+            <li Class="HediffCompProperties_SeverityPerDay">
+                <severityPerDay>-0.5</severityPerDay>
+                <showHoursToRecover>true</showHoursToRecover>
+            </li>
+        </comps>
+    </HediffDef>
 </Defs>

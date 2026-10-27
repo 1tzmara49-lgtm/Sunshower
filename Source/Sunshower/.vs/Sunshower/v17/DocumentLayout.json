@@ -3,20 +3,20 @@
   "WorkspaceRootPath": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\Sunshower\\Source\\Sunshower\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{1C7FB5EA-295F-49D0-9BEC-8F1827A96BB6}|Sunshower.csproj|C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\Sunshower\\Source\\Sunshower\\patches.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1C7FB5EA-295F-49D0-9BEC-8F1827A96BB6}|Sunshower.csproj|solutionrelative:patches.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{1C7FB5EA-295F-49D0-9BEC-8F1827A96BB6}|Sunshower.csproj|C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\Sunshower\\Source\\Sunshower\\harmonyinit.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1C7FB5EA-295F-49D0-9BEC-8F1827A96BB6}|Sunshower.csproj|solutionrelative:harmonyinit.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{1C7FB5EA-295F-49D0-9BEC-8F1827A96BB6}|Sunshower.csproj|c:\\program files (x86)\\steam\\steamapps\\common\\rimworld\\mods\\sunshower\\source\\sunshower\\utility.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{1C7FB5EA-295F-49D0-9BEC-8F1827A96BB6}|Sunshower.csproj|C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\Sunshower\\Source\\Sunshower\\utility.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{1C7FB5EA-295F-49D0-9BEC-8F1827A96BB6}|Sunshower.csproj|solutionrelative:utility.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1C7FB5EA-295F-49D0-9BEC-8F1827A96BB6}|Sunshower.csproj|c:\\program files (x86)\\steam\\steamapps\\common\\rimworld\\mods\\sunshower\\source\\sunshower\\patches.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1C7FB5EA-295F-49D0-9BEC-8F1827A96BB6}|Sunshower.csproj|solutionrelative:patches.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{1C7FB5EA-295F-49D0-9BEC-8F1827A96BB6}|Sunshower.csproj|C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\Sunshower\\Source\\Sunshower\\defof.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{1C7FB5EA-295F-49D0-9BEC-8F1827A96BB6}|Sunshower.csproj|solutionrelative:defof.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1C7FB5EA-295F-49D0-9BEC-8F1827A96BB6}|Sunshower.csproj|C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\Sunshower\\Source\\Sunshower\\harmonyinit.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1C7FB5EA-295F-49D0-9BEC-8F1827A96BB6}|Sunshower.csproj|solutionrelative:harmonyinit.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{00000000-0000-0000-0000-000000000000}|\u003CSolution\u003E|Sunshower||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|"
@@ -29,7 +29,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Bookmark",
@@ -37,46 +37,46 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "Utility.cs",
-              "DocumentMoniker": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\Sunshower\\Source\\Sunshower\\Utility.cs",
-              "RelativeDocumentMoniker": "Utility.cs",
-              "ToolTip": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\Sunshower\\Source\\Sunshower\\Utility.cs",
-              "RelativeToolTip": "Utility.cs",
-              "ViewState": "AgIAAAkAAAAAAAAAAAAAABkAAAAmAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-10-23T08:16:54.563Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "DefOf.cs",
-              "DocumentMoniker": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\Sunshower\\Source\\Sunshower\\DefOf.cs",
-              "RelativeDocumentMoniker": "DefOf.cs",
-              "ToolTip": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\Sunshower\\Source\\Sunshower\\DefOf.cs",
-              "RelativeToolTip": "DefOf.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAyAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-10-23T08:52:35.425Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "Patches.cs",
               "DocumentMoniker": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\Sunshower\\Source\\Sunshower\\Patches.cs",
               "RelativeDocumentMoniker": "Patches.cs",
               "ToolTip": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\Sunshower\\Source\\Sunshower\\Patches.cs",
               "RelativeToolTip": "Patches.cs",
-              "ViewState": "AgIAABIAAAAAAAAAAAAAAB8AAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAABUAAAAAAAAAAAAAwDoAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-10-23T08:28:44.021Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
+              "Title": "Utility.cs",
+              "DocumentMoniker": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\Sunshower\\Source\\Sunshower\\Utility.cs",
+              "RelativeDocumentMoniker": "Utility.cs",
+              "ToolTip": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\Sunshower\\Source\\Sunshower\\Utility.cs",
+              "RelativeToolTip": "Utility.cs",
+              "ViewState": "AgIAADwAAAAAAAAAAAAAwFkAAAA4AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-23T08:16:54.563Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "DefOf.cs",
+              "DocumentMoniker": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\Sunshower\\Source\\Sunshower\\DefOf.cs",
+              "RelativeDocumentMoniker": "DefOf.cs",
+              "ToolTip": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\Sunshower\\Source\\Sunshower\\DefOf.cs",
+              "RelativeToolTip": "DefOf.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-23T08:52:35.425Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
               "Title": "HarmonyInit.cs",
               "DocumentMoniker": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\Sunshower\\Source\\Sunshower\\HarmonyInit.cs",
               "RelativeDocumentMoniker": "HarmonyInit.cs",
@@ -84,8 +84,7 @@
               "RelativeToolTip": "HarmonyInit.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAIAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-10-23T08:23:48.49Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-10-23T08:23:48.49Z"
             },
             {
               "$type": "Document",

@@ -1,4 +1,5 @@
-﻿using System;
+﻿
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -9,7 +10,7 @@ using RimWorld;
 
 namespace Sunshower
 {
-    [HarmonyPatch (typeof(Verb_MeleeAttackDamage), "ApplyMeleeDamageToTarget")]
+    [HarmonyPatch(typeof(Verb_MeleeAttackDamage), "ApplyMeleeDamageToTarget")]
     public static class MeleeDamageChecker
     {
 
@@ -18,31 +19,39 @@ namespace Sunshower
         {
             Pawn attacker = __instance.CasterPawn;
 
-            if (attacker.equipment.Primary.def == SunshowerDefOf.Sunshower_umbrella)
+            if (attacker == null || !target.HasThing) return;
+
+            if (target.Thing is Pawn targetPawn)
             {
-                if(target.Thing is Pawn)
+                if (targetPawn.Dead) return;
+
+                float attackerMood = attacker.needs?.mood?.CurLevel ?? 1f;
+
+                ThingWithComps primary = attacker.equipment?.Primary;
+
+                if (primary != null && primary.def == SunshowerDefOf.Sunshower_umbrella)
                 {
-                    if (target.Pawn.Dead) return;
-                    float maxThreshold = target.Pawn.GetStatValue(StatDefOf.MentalBreakThreshold);
-                    float mood = target.Pawn.needs.mood.CurLevel;
-                    
-                    float multiplier = Utility.getDamageIncrease(maxThreshold*1.5f, mood);
-                    __result.totalDamageDealt *= multiplier;
-                    Utility.addOrIncreaseSeverity(target.Pawn, SunshowerDefOf.Sunshower_Sinking);
+                    if (targetPawn.needs?.mood != null)
+                    {
+                        float maxThreshold = targetPawn.GetStatValue(StatDefOf.MentalBreakThreshold);
+                        float mood = targetPawn.needs.mood.CurLevel;
 
-                    /*
-                     the ultra cool game design decision here:
-                        sunshower umbrella does both jack shit damage and jack shit sinking.
-                        damage is increased on lower morale pawns (up to 2x)
-                        to actually stack sinking the pawn gotta apply a shit ton of sinking at once (since it consumes 0.2 on hit, while base sunshower applies 0.1 sinking. )
-                        this esentially means that it will deal morale damage, but it wont be able to stack + won't do a lot.
+                        float multiplier = Utility.getDamageIncrease(maxThreshold * 1.5f, mood);
+                        __result.totalDamageDealt *= multiplier;
+                    }
 
-                        to increase sinking stacking the pawn gotta have the sunshower outfit which increases the
-                        sinking stack based on the pawn's own emotion.
-                     
-                     */
-                    Utility.applyMoraleDamage(target.Pawn);
+                    float sinkingToApply = 0.1f;
+
+                    if (attacker.equipment.AllEquipmentListForReading.Any(thing => thing.def == SunshowerDefOf.Sunshower_Raincoat))
+                    {
+                        sinkingToApply = sinkingToApply / Math.Max(attackerMood, 0.1f);
+                    }
+
+                    Utility.addOrIncreaseSeverity(targetPawn, SunshowerDefOf.Sunshower_Sinking, sinkingToApply);
+                    Utility.addOrIncreaseSeverity(attacker, SunshowerDefOf.Sunshower_Sinking, sinkingToApply / 2f);
                 }
+
+                Utility.applyMoraleDamage(targetPawn);
             }
         }
     }

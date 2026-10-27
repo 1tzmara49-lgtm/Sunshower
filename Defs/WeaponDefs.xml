@@ -6,7 +6,7 @@
     <possessionCount>1</possessionCount>
     <smeltable>false</smeltable>
     <graphicData>
-      <texPath>sunshowerplaceholder</texPath>
+      <texPath>Umbrella/Sunshower_Umbrella</texPath>
       <graphicClass>Graphic_Single</graphicClass>
     </graphicData>
     <techLevel>Medieval</techLevel>
