@@ -42,19 +42,69 @@
 
     <HediffDef>
         <defName>Sunshower_BreakProtection</defName>
-        <label>Mental break protection</label>
-        <description>Intercepts one mental break (unless its forced) and goes on cooldown.</description>
-        <initialSeverity>1.0</initialSeverity>
+        <label>Sunshower raincoat</label>
+        <description>Provides buffs based on pawn's sinking</description>
+        <initialSeverity>0.1</initialSeverity>
         <maxSeverity>1.0</maxSeverity>
         <isBad>false</isBad>
-        <hediffClass>hediffWithComps</hediffClass>
+        <hediffClass>Sunshower.SunshowerHediffClass</hediffClass>
         <defaultLabelColor>(120, 116, 116)</defaultLabelColor>
         <alwaysShowSeverity>false</alwaysShowSeverity>
+        <stages>
+            <li>
+                <minSeverity>0.0</minSeverity>
+            </li>
+            <li>
+                <minSeverity>0.2</minSeverity>
+                <statFactors>
+                    <IncomingDamageFactor>0.9</IncomingDamageFactor>
+                    <MeleeCooldownFactor>0.9</MeleeCooldownFactor>
+                    <MeleeDamageFactor>0.9</MeleeDamageFactor>
+                </statFactors>
+                <statOffsets>
+                    <MoveSpeed>0.2</MoveSpeed>
+                </statOffsets>
+            </li>
+            <li>
+                <minSeverity>0.4</minSeverity>
+                <statFactors>
+                    <IncomingDamageFactor>0.7</IncomingDamageFactor>
+                    <MeleeCooldownFactor>0.7</MeleeCooldownFactor>
+                    <MeleeDamageFactor>0.7</MeleeDamageFactor>
+                </statFactors>
+                <statOffsets>
+                    <MoveSpeed>0.5</MoveSpeed>
+                </statOffsets>
+            </li>
+            <li>
+                <minSeverity>0.6</minSeverity>
+                <statFactors>
+                    <IncomingDamageFactor>0.5</IncomingDamageFactor>
+                    <MeleeCooldownFactor>0.5</MeleeCooldownFactor>
+                    <MeleeDamageFactor>0.5</MeleeDamageFactor>
+                </statFactors>
+                <statOffsets>
+                    <MoveSpeed>0.75</MoveSpeed>
+                </statOffsets>
+            </li>
+            <li>
+                <minSeverity>0.8</minSeverity>
+                <statFactors>
+                    <IncomingDamageFactor>0.3</IncomingDamageFactor>
+                    <MeleeCooldownFactor>0.3</MeleeCooldownFactor>
+                    <MeleeDamageFactor>0.3</MeleeDamageFactor>
+                </statFactors>
+                <statOffsets>
+                    <MoveSpeed>1.0</MoveSpeed>
+                </statOffsets>
+            </li>
+        </stages>
     </HediffDef>
 
     <HediffDef>
         <defName>Sunshower_BreakProtectionCooldown</defName>
         <label>Mental break protection (Cooldown)</label>
+        <description>This pawn's mental break was intercepted and prevented.</description>
         <initialSeverity>1.0</initialSeverity>
         <maxSeverity>1.0</maxSeverity>
         <isBad>false</isBad>

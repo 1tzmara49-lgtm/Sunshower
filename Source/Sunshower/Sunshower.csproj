@@ -54,6 +54,7 @@
   <ItemGroup>
     <Compile Include="DefOf.cs" />
     <Compile Include="HarmonyInit.cs" />
+    <Compile Include="HediffClass.cs" />
     <Compile Include="Patches.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Utility.cs" />
